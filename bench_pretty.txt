@@ -1,0 +1,9 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/gtvb/imp
+cpu: Apple M1
+                     │ bench.txt  │
+                     │   sec/op   │
+ConvolveSeq-8          2.776 ± 0%
+ConvolveConcurrent-8   1.452 ± 5%
+geomean                2.008

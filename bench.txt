@@ -1,0 +1,26 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/gtvb/imp
+cpu: Apple M1
+BenchmarkConvolveSeq-8          	       1	2835517625 ns/op
+BenchmarkConvolveSeq-8          	       1	2773595792 ns/op
+BenchmarkConvolveSeq-8          	       1	2763253416 ns/op
+BenchmarkConvolveSeq-8          	       1	2769123000 ns/op
+BenchmarkConvolveSeq-8          	       1	2766968542 ns/op
+BenchmarkConvolveSeq-8          	       1	2777863875 ns/op
+BenchmarkConvolveSeq-8          	       1	2783139917 ns/op
+BenchmarkConvolveSeq-8          	       1	2774175375 ns/op
+BenchmarkConvolveSeq-8          	       1	2785429000 ns/op
+BenchmarkConvolveSeq-8          	       1	2780229292 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1521258375 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1463467833 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1373010833 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1403079709 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1471290583 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1441445209 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1441490000 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1493740583 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1421706208 ns/op
+BenchmarkConvolveConcurrent-8   	       1	1517985375 ns/op
+PASS
+ok  	github.com/gtvb/imp	42.730s
