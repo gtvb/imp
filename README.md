@@ -13,3 +13,7 @@ decidimos aplicar apenas uma operação de blurring (embaçamento).
 Utilizamos as goroutines, que são unidades de execução gerenciadas pelo 
 runtime do Go e multiplexadas em threads do sistema operacional, podendo
 de certa foram ser consideradas como Threads de Usuário.
+
+### Resultados
+
+![Imagem Original](./assets/beach.jpg) ![Imagem Embaçada](./assets/beach_blurred.jpg)

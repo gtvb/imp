@@ -1,0 +1,66 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/gtvb/imp
+cpu: Apple M1
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 264659500 ns/op
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 264657021 ns/op
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 264938094 ns/op
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 265646584 ns/op
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 265016406 ns/op
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 264543646 ns/op
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 265790781 ns/op
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 265016812 ns/op
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 264464771 ns/op
+BenchmarkConvolveSeq/Image_assets/city.jpg_(640x960)_-_Sequential-8         	       4	 264048792 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2737845917 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2657495042 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2664269917 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2659754791 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2659976667 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2693838375 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2667824125 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2659846875 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2671734500 ns/op
+BenchmarkConvolveSeq/Image_assets/office.jpg_(1920x2870)_-_Sequential-8     	       1	2662980792 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4185486750 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4175766167 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4173789500 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4166026292 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4183410792 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4181011708 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4185062958 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4196664917 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4199245417 ns/op
+BenchmarkConvolveSeq/Image_assets/beach.jpg_(2400x3600)_-_Sequential-8      	       1	4185227125 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       7	 164524887 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       7	 166262643 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       7	 165296435 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       7	 168595559 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       7	 164450821 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       7	 165309506 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       7	 165997488 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       7	 166445226 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       6	 167859854 ns/op
+BenchmarkConvolveConcurrent/Image_assets/city.jpg_(640x960)_-_Concurrent-8  	       7	 163104774 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1287802917 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1290452708 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1307975250 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1359738875 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1285822000 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1249572084 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1267998875 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1308609958 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1308144542 ns/op
+BenchmarkConvolveConcurrent/Image_assets/office.jpg_(1920x2870)_-_Concurrent-8         	       1	1347821083 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	2160050916 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	2339148083 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	2226387917 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	2001166792 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	2036736541 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	2096775709 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	1985163584 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	1989282042 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	2090031708 ns/op
+BenchmarkConvolveConcurrent/Image_assets/beach.jpg_(2400x3600)_-_Concurrent-8          	       1	2119999375 ns/op
+PASS
+ok  	github.com/gtvb/imp	143.189s
