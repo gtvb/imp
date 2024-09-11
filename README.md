@@ -16,4 +16,6 @@ de certa foram ser consideradas como Threads de Usuário.
 
 ### Resultados
 
-![Imagem Original](./assets/beach.jpg) ![Imagem Embaçada](./assets/beach_blurred.jpg)
+Imagem original             |  Imagem "embaçada"
+:-------------------------:|:-------------------------:
+![Original](./assets/beach.jpg)  |  ![Blurred](./assets/beach_blurred.jpg)
