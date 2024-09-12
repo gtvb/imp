@@ -10,21 +10,21 @@ import (
 
 func main() {
 	file, err := os.Open(os.Args[1])
-
 	if err != nil {
 		panic(err)
 	}
+    defer file.Close()
 
 	img, _, err := image.Decode(file)
 	if err != nil {
 		panic(err)
 	}
 
-	now := time.Now()
+    now := time.Now()
 	convolved := ConvolveConcurent(img, 14)
-	fmt.Printf("Elapsed (ms): %d\n", time.Since(now).Milliseconds())
+    fmt.Printf("Elapsed: %f (seconds)\n", time.Since(now).Seconds())
 
-	output, err := os.Create("output.jpg")
+	output, err := os.Create(os.Args[2])
 	if err != nil {
 		panic(err)
 	}
