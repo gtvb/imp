@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"image"
 	"image/jpeg"
@@ -9,7 +10,16 @@ import (
 )
 
 func main() {
-	file, err := os.Open(os.Args[1])
+    var kernelRadius int
+    var concurrent bool
+
+    flag.IntVar(&kernelRadius, "r", 7, "Raio do kernel de convolução")
+    flag.BoolVar(&concurrent, "c", false, "Habilita a convolução concorrente")
+    flag.Parse()
+
+    args := flag.Args()
+
+	file, err := os.Open(args[0])
 	if err != nil {
 		panic(err)
 	}
@@ -20,16 +30,23 @@ func main() {
 		panic(err)
 	}
 
+    var processedImage *image.RGBA
     now := time.Now()
-	convolved := ConvolveConcurent(img, 14)
-    fmt.Printf("Elapsed: %f (seconds)\n", time.Since(now).Seconds())
+    if concurrent {
+        fmt.Println("Utilizando convolução concorrente...")
+	    processedImage = ConvolveConcurent(img, kernelRadius)
+    } else {
+        fmt.Println("Utilizando convolução sequencial...")
+	    processedImage = ConvolveSeq(img, kernelRadius)
+    }
+    fmt.Printf("Duração: %f (segundos)\n", time.Since(now).Seconds())
 
-	output, err := os.Create(os.Args[2])
+	output, err := os.Create(args[1])
 	if err != nil {
 		panic(err)
 	}
 
-	if err = jpeg.Encode(output, convolved, nil); err != nil {
+	if err = jpeg.Encode(output, processedImage, nil); err != nil {
 		panic(err)
 	}
 }
